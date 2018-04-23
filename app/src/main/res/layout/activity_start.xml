@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#673bb7"
+    tools:context="com.example.hp.chatapp.Activity.StartActivity">
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/home"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/chat_app_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/chat_app_start"
+        android:textColor="@android:color/white"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/start_reg_btn"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/chat_app_text"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#ffffff"
+        android:text="@string/need_a_new_account"
+        android:textAllCaps="false"
+        android:background="@drawable/custom_btn"
+        android:textColor="#673bb7"
+        android:textStyle="bold|italic" />
+
+    <Button
+        android:id="@+id/start_already_account_btn"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/start_reg_btn"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@android:color/white"
+        android:text="@string/already_have_account"
+        android:textAllCaps="false"
+        android:textColor="#673bb7"
+        android:background="@drawable/custom_btn"
+        android:textStyle="bold|italic" />
+
+</RelativeLayout>
